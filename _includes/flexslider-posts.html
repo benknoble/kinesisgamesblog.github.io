@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<!-- Place somewhere in the <head> of your document -->
+		<link rel="stylesheet" href="../css/flexslider.css" type="text/css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<script src="../js/jquery.flexslider.js"></script>
+
+		<script type="text/javascript" charset="utf-8">
+		  $(window).load(function() {
+		    $('.flexslider').flexslider();
+		  });
+		</script>
+
+		<style type="text/css">
+		.flex-caption {
+		  width: 96%;
+		  padding: 2%;
+		  left: 0;
+		  bottom: 0;
+		  background: rgba(0,0,0,.5);
+		  color: #fff;
+		  text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+		  font-size: 14px;
+		  line-height: 18px;
+		}
+		</style>
+	</head>
+	
+	<body>
+		<ul class="slides">
+			<li>
+				<img src="../img/devcon/ansible.jpg">
+				<p class="flex-caption">Session on Ansible</p>	
+			</li>
+			<li>
+				<img src="../img/devcon/tcp-ip.jpg">
+				<p class="flex-caption">Session on IPv6 - TCP/IP</p>	
+			</li>
+		</ul>
+	</body>
+</html>

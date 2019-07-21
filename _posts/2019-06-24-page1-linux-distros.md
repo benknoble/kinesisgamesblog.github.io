@@ -2,7 +2,7 @@
 layout: post
 title: Linux Distros
 subtitle: Just bae
-tags: [linux, distro, windows sucks, manjaro, deepin, mint]
+tags: [linux, distro, windows sucks, arch, manjaro, deepin, mint, ubuntu, fedora, opensuse]
 comments: true
 ---
 
@@ -32,7 +32,7 @@ in the root (`/`) directory. I loved the history of how everything evolved into 
 today and being a distro-hopper, I switched to other distros around each 2 weeks (need time
 to prepare, do my partitions and wait for the ISP to provide some more GBs of Internet).
 
-## The final switch (Manjaro Deepin)
+## The final switch (Arch linux)
 
 I tried several linux distros (Ubuntu, Mint, POP! OS, Elementary OS) and desktop environments
 (XFCE, KDE, GNOME, Cinnamon) but in the end, I found my sweet spot. I always hoped the next
@@ -44,9 +44,18 @@ and community I have ever seen. The docs possibly have solutions for any issues 
 based on Arch profit from all of its commands. I opted for Manjaro instead because it is
 supposedly more stable and refined than Arch. There are tons of ways to install packages on
 Arch based distros (pacman, AUR, snap, AppImages, compile from source) and they provide much
-more customizability than other popular distros. They also get package and kernal updates fast.
+more customizability than other popular distros. They also get package and kernal updates fast as
+they are rolling releases.
 
 I tried a lot of desktop environments on Manjaro but finally settled for the Deepin one. The
 Deepin edition can be toggled to look like many desktop environments and also uses its own
 apps (not third-party like Dolphin as file manager for example) as default ones, boosting
-performance. I will still continue to try out other distros tho.
+performance. This was the second distro I used most after Linux Mint.
+
+In the end, I fell in love with Arch as I used Manjaro and decided I was ready to take up the
+challenge and build it from the commandline setup. I booted the live disk of Arch, configured it 
+using help from the amazing documentation and installed a lot of desktop environments. I 
+settled for KDE Plasma as desktop environment because it was much more customizable than 
+others. Lastly, I swapped out the hard disk of my laptop for one with more storage and installed 
+several distros on partitions. This includes Ubuntu Budgie, Deepin, Fedora, openSUSE and
+Linux Mint along with my favorite one, Arch.
