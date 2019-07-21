@@ -89,28 +89,30 @@ Need to override the 3.3 new styles for modern browsers & apply opacity
 
 
   <style>
-  #myCarousel .item { width: 100%; backface-visibility: visible;}
+    /* Text */
+  #myCarousel .item { width: 100%; backface-visibility: visible;} 
   {% if include.unit == '%' %}#myCarousel .item {padding-bottom: {{ include.height }}%;}{% endif %}
   {% if include.unit == 'px' %}#myCarousel .item {height: {{ include.height }}px;}{% endif %}
   #myCarousel .item > div {position: absolute; left: 50%; top: 50%;
     -ms-transform: translate(-50%, -50%); /* IE 9 */
     -webkit-transform: translate(-50%, -50%); /* Safari */
     transform: translate(-50%, -50%);
-    color: {{ page.slider.text_color }}; 
+    color: {{ #555555 }}; 
     font-weight: bold;
     text-align: center;
     text-shadow: 0 0 40px {{ page.slider.shadow_color }};
     font-size: 15px;
     white-space: nowrap;
   }
-  #myCarousel .item > div h3 {
+  /* Arrows */
+  #myCarousel .item > div h3 { 
     padding-top: 7px;
-    color: {{ page.slider.text_color }}; 
+    color: {{ #555555 }}; 
     font-weight: bold; font-size: 30px; 
   }
   #myCarousel span.glyphicon {
       font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif!important;
-      color: {{ page.slider.text_color }}!important;
+      color: #555555!important;
       font-size: 60px!important;
       height: 60px!important;
       line-height: 50px!important;
@@ -123,6 +125,15 @@ Need to override the 3.3 new styles for modern browsers & apply opacity
   transition: all 0.3s ease-in-out;
   min-width: 60px!important;
   }
+
+  .carousel-indicators .active {
+    background-color: #555555;
+  }
+
+  .carousel-indicators li {
+    border-color: #555555;
+  }
+
   #myCarousel .carousel-control:hover {opacity: 1!important;}
   #myCarousel .carousel-indicators {bottom: 0!important; margin-bottom: 12px;}
   #myCarousel .glyphicon-chevron-left::before,
