@@ -38,7 +38,7 @@ about how to prepare partitions and introduces how to install packages
 manually. Basically, a partition is created to host the new OS that will
 be made. Then packages, which will contain libraries and utilities that
 the new OS will use are downloaded, extracted and compiled in a directory
-on that just created partition.
+on that newly created partition.
 
 Finally, the guide instructs to change root to that new partition and
 compile packages for the final system. A couple of other steps needs to be
@@ -52,9 +52,9 @@ For this blog post, I'll be employing SBUs to explain difficulties I faced.
 
 The first trouble I faced was that I was creating Kinesis OS on my laptop
 which was rocking an Intel Celeron processor. 1 SBU was equal to around 4
-minutes which takes absurbly long time when packages of like 90+ SBUs need
-to be installed. Moreover, I couldn't do anything else smoothly because all
-of my laptop's resources was being used to compile packages. I then 
+minutes which takes an absurbly long time when packages of like 90+ SBUs need
+to be installed. Moreover, I couldn't do anything else smoothly meanwhile because
+all of my laptop's resources was being used to compile packages. I then 
 successfully repaired a broken laptop I had and turned it into a work bench.
 It was significantly faster with a SBU of around 1.5 minutes and I used it
 to compile all my packages and build Kinesis OS. 
@@ -66,10 +66,10 @@ the specific extracted directory, commands need to be issued to compile that
 package. Sometimes, packages need to be recompiled again due to their 
 dependencies. When this needs to be done, the respective archive needs to be
 extracted again and the package needs to be again recompiled from scratch.
-But that second compilation at times differs from the options used during 
+But that recompilation at times differs from the options used during 
 the first compilation. My mistake was that I wasn't deleting the extracted
 directory of a package after the first compilation and was again compiling it
-the second time on top of the options I used during the first.
+the second time using the options I used during the first.
 
 Thirdly, it was really difficult to figure out how to get the internet working
 via a wireless connection. There were several ways to do it but the instructions
